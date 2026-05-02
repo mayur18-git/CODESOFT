@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="A modern calculator with history, unit converter, dark/light theme and more." />
+  <meta name="theme-color" content="#1c1c1e" />
+  <title>Calculator</title>
+  <link rel="icon" href="./logo-png.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="panel" id="historyPanel" aria-hidden="true">
+    <div class="panel-handle"></div>
+    <div class="panel-header">
+      <span>History</span>
+      <button class="panel-close" id="historyClose" aria-label="Close history">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+    </div>
+    <ul class="history-list" id="historyList">
+      <li class="history-empty">No calculations yet</li>
+    </ul>
+    <button class="panel-clear-btn" id="historyClear">
+      <span class="material-symbols-rounded">delete_sweep</span> Clear History
+    </button>
+  </div>
+
+  <div class="panel" id="converterPanel" aria-hidden="true">
+    <div class="panel-handle"></div>
+    <div class="panel-header">
+      <span>Converter</span>
+      <button class="panel-close" id="converterClose" aria-label="Close converter">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+    </div>
+    <div class="conv-tabs">
+      <button class="conv-tab active" data-type="length">Length</button>
+      <button class="conv-tab" data-type="weight">Weight</button>
+      <button class="conv-tab" data-type="temp">Temp</button>
+      <button class="conv-tab" data-type="currency">Currency</button>
+    </div>
+    <div class="conv-note" id="convNote"></div>
+    <div class="conv-body">
+      <div class="conv-row">
+        <input class="conv-input" id="convFrom" type="number" placeholder="0" />
+        <select class="conv-select" id="convFromUnit"></select>
+      </div>
+      <button class="conv-swap" id="convSwap" aria-label="Swap units">
+        <span class="material-symbols-rounded">swap_vert</span>
+      </button>
+      <div class="conv-row">
+        <input class="conv-input" id="convTo" type="number" placeholder="0" readonly />
+        <select class="conv-select" id="convToUnit"></select>
+      </div>
+      <button class="conv-use-btn" id="convUse">
+        <span class="material-symbols-rounded">keyboard_return</span> Use Result
+      </button>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="app">
+
+    <header class="app-header">
+      <img src="./logo-png.svg" alt="Calculator Logo" class="header-logo" />
+      <span class="header-title">Calculator</span>
+    </header>
+
+    <div class="display-section">
+      <div class="expr" id="expr"></div>
+      <div class="result-wrap">
+        <div class="result" id="result">0</div>
+        <span class="cursor" id="cursor"></span>
+      </div>
+      <div class="icon-row">
+        <button class="icon-btn" id="btnHistory" aria-label="History">
+          <span class="material-symbols-rounded">history</span>
+          <span class="icon-label">History</span>
+        </button>
+        <button class="icon-btn" id="btnConverter" aria-label="Converter">
+          <span class="material-symbols-rounded">straighten</span>
+          <span class="icon-label">Convert</span>
+        </button>
+        <button class="icon-btn" id="btnCurrency" aria-label="Currency">
+          <span class="material-symbols-rounded">currency_exchange</span>
+          <span class="icon-label">Currency</span>
+        </button>
+        <button class="icon-btn" id="btnTheme" aria-label="Toggle theme">
+          <span class="material-symbols-rounded" id="themeIcon">dark_mode</span>
+          <span class="icon-label" id="themeLabel">Dark</span>
+        </button>
+        <button class="icon-btn" id="btnSize" aria-label="Toggle size">
+          <span class="material-symbols-rounded" id="sizeIcon">density_medium</span>
+          <span class="icon-label" id="sizeLabel">Normal</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="btn-grid">
+      <button class="btn btn-fn"  data-action="clear">AC</button>
+      <button class="btn btn-fn"  data-action="delete"><span class="material-symbols-rounded">backspace</span></button>
+      <button class="btn btn-fn"  data-action="sign">+/−</button>
+      <button class="btn btn-op"  data-value="/">÷</button>
+
+      <button class="btn btn-num" data-value="7">7</button>
+      <button class="btn btn-num" data-value="8">8</button>
+      <button class="btn btn-num" data-value="9">9</button>
+      <button class="btn btn-op"  data-value="*">×</button>
+
+      <button class="btn btn-num" data-value="4">4</button>
+      <button class="btn btn-num" data-value="5">5</button>
+      <button class="btn btn-num" data-value="6">6</button>
+      <button class="btn btn-op"  data-value="-">−</button>
+
+      <button class="btn btn-num" data-value="1">1</button>
+      <button class="btn btn-num" data-value="2">2</button>
+      <button class="btn btn-num" data-value="3">3</button>
+      <button class="btn btn-op"  data-value="+">+</button>
+
+      <button class="btn btn-fn"  data-action="percent">%</button>
+      <button class="btn btn-num" data-value="0">0</button>
+      <button class="btn btn-num" data-value=".">.</button>
+      <button class="btn btn-eq"  data-action="equals">=</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

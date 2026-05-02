@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+
+    <!-- light grey background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#e8eaed"/>
+      <stop offset="100%" stop-color="#d0d3d8"/>
+    </linearGradient>
+
+    <!-- top-left light sheen (neumorphic light source) -->
+    <radialGradient id="sheen" cx="25%" cy="20%" r="65%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.75)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+
+    <!-- dark grey button gradient (top-light neumorphic) -->
+    <linearGradient id="btnDark" x1="25%" y1="0%" x2="75%" y2="100%">
+      <stop offset="0%"   stop-color="#5c5c5e"/>
+      <stop offset="100%" stop-color="#3a3a3c"/>
+    </linearGradient>
+
+    <!-- orange equals button gradient -->
+    <linearGradient id="btnOrange" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%"   stop-color="#ffb340"/>
+      <stop offset="100%" stop-color="#e07000"/>
+    </linearGradient>
+
+    <!-- neumorphic outer shadow for whole icon -->
+    <filter id="iconShadow" x="-6%" y="-4%" width="116%" height="120%">
+      <feDropShadow dx="0"  dy="10" stdDeviation="18" flood-color="#b0b3b8" flood-opacity="0.55"/>
+      <feDropShadow dx="0"  dy="-6" stdDeviation="10" flood-color="#ffffff" flood-opacity="0.80"/>
+    </filter>
+
+    <!-- neumorphic button shadow (dark buttons) -->
+    <filter id="btnShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="-4" dy="-4" stdDeviation="6" flood-color="#ffffff"  flood-opacity="0.55"/>
+      <feDropShadow dx="4"  dy="6"  stdDeviation="8" flood-color="#9a9da3"  flood-opacity="0.50"/>
+    </filter>
+
+    <!-- neumorphic orange button shadow -->
+    <filter id="orangeShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="-3" dy="-3" stdDeviation="5" flood-color="#ffcc70"  flood-opacity="0.60"/>
+      <feDropShadow dx="4"  dy="6"  stdDeviation="8" flood-color="#a04800"  flood-opacity="0.40"/>
+    </filter>
+
+    <!-- inner highlight on buttons (top arc glow) -->
+    <radialGradient id="btnSheen" cx="40%" cy="20%" r="60%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.20)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+
+    <!-- inner highlight on orange button -->
+    <radialGradient id="orangeSheen" cx="35%" cy="18%" r="55%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.28)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- ══════════════════════════════════════
+       ROUNDED SQUARE BACKGROUND
+  ══════════════════════════════════════ -->
+  <rect x="10" y="10" width="492" height="492" rx="110"
+        fill="url(#bgGrad)" filter="url(#iconShadow)"/>
+
+  <!-- top-left light sheen overlay -->
+  <rect x="10" y="10" width="492" height="492" rx="110"
+        fill="url(#sheen)"/>
+
+  <!-- very subtle border -->
+  <rect x="10" y="10" width="492" height="492" rx="110"
+        fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+
+  <!-- ══════════════════════════════════════
+       2 × 2 BUTTON GRID
+       Button diameter : 152px
+       Gap between     : 28px
+       Grid width      : 152+28+152 = 332px
+       Start X         : (512-332)/2 = 90
+       Start Y         : (512-332)/2 = 90
+       Centre row 1    : 90 + 76 = 166
+       Centre row 2    : 90 + 152 + 28 + 76 = 346
+       Centre col 1    : 166
+       Centre col 2    : 346
+  ══════════════════════════════════════ -->
+
+  <!-- ── TOP LEFT  "+" ── -->
+  <circle cx="166" cy="166" r="76" fill="url(#btnDark)" filter="url(#btnShadow)"/>
+  <circle cx="166" cy="166" r="76" fill="url(#btnSheen)"/>
+  <text x="166" y="166"
+        font-family="-apple-system, Helvetica Neue, Arial, sans-serif"
+        font-size="72" font-weight="200"
+        fill="white" text-anchor="middle" dominant-baseline="central"
+        opacity="0.95">+</text>
+
+  <!-- ── TOP RIGHT  "−" ── -->
+  <circle cx="346" cy="166" r="76" fill="url(#btnDark)" filter="url(#btnShadow)"/>
+  <circle cx="346" cy="166" r="76" fill="url(#btnSheen)"/>
+  <text x="346" y="166"
+        font-family="-apple-system, Helvetica Neue, Arial, sans-serif"
+        font-size="72" font-weight="200"
+        fill="white" text-anchor="middle" dominant-baseline="central"
+        opacity="0.95">−</text>
+
+  <!-- ── BOTTOM LEFT  "×" ── -->
+  <circle cx="166" cy="346" r="76" fill="url(#btnDark)" filter="url(#btnShadow)"/>
+  <circle cx="166" cy="346" r="76" fill="url(#btnSheen)"/>
+  <text x="166" y="346"
+        font-family="-apple-system, Helvetica Neue, Arial, sans-serif"
+        font-size="68" font-weight="200"
+        fill="white" text-anchor="middle" dominant-baseline="central"
+        opacity="0.95">×</text>
+
+  <!-- ── BOTTOM RIGHT  "=" — ORANGE HIGHLIGHT ── -->
+  <circle cx="346" cy="346" r="76" fill="url(#btnOrange)" filter="url(#orangeShadow)"/>
+  <circle cx="346" cy="346" r="76" fill="url(#orangeSheen)"/>
+  <text x="346" y="346"
+        font-family="-apple-system, Helvetica Neue, Arial, sans-serif"
+        font-size="68" font-weight="300"
+        fill="white" text-anchor="middle" dominant-baseline="central"
+        opacity="0.97">=</text>
+
+</svg>
