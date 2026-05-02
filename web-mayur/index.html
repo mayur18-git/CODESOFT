@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mayur Kamariya</title>
+
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" type="image/svg+xml" href="./image/logo.svg">    <style>
+            .skills .bar .info img { width: 48px; height: 48px; }
+    </style>
+</head>
+
+<body>
+    
+<!-- NAVBAR -->
+<header>
+    <a href="#" class="logo">
+        <img src="./image/logo.svg" alt="MK Logo" style="height:42px;width:42px;vertical-align:middle;margin-right:8px;">
+        <span style="vertical-align:middle;">Mayur</span>
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h2>Hi There,<br> I'm Mayur <span>Kamariya</span></h2>
+        <p>I am an <span class="typing-text"></span></p>
+
+        <a href="#about" class="btn"><span>About Me</span></a>
+
+        <!-- SOCIAL -->
+        <div class="socials">
+            <ul class="social-icons">
+
+                <li>
+                    <a class="linkedin"
+                       href="https://www.linkedin.com/in/mayur-kamariya-3b4771321/"
+                       target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="github"
+                       href="https://github.com/mayur18-git"
+                       target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="email"
+                       href="mailto:mrkamariya60@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="image">
+        <img src="./image/profile.jpeg" alt="">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="./image/profile.jpeg" alt="Mayur Kamariya">
+        </div>
+
+        <div class="content">
+            <h3>I'm Mayur Kamariya</h3>
+            <span class="tag">IT Student | AI & Backend Developer</span>
+
+            <p>
+                I am an IT student passionate about Artificial Intelligence and Backend Development.
+                Currently pursuing B.Tech in Information Technology from Charusat University.
+                I am focused on improving my programming skills and building real-world projects.
+                I enjoy learning new technologies and solving real problems.
+            </p>
+
+            <div class="box-container">
+                <div class="box">
+                    <p><span>Email :</span> mrkamariya60@gmail.com</p>
+                    <p><span>Place :</span> Junagadh, Gujarat</p>
+                </div>
+            </div>
+
+            <!-- RESUME BUTTON -->
+            <div class="resumebtn">
+                <a href="./resume.pdf" download class="btn">
+                    <span>Download Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <h2 class="heading">Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+        <div class="row" id="skillsContainer"></div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+
+    <h1 class="heading">My <span>Education</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <h3>B.Tech in Information Technology</h3>
+                <p>Charusat University</p>
+                <h4>2024 - 2028 | Pursuing</h4>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <h3>12th Science (PCM)</h3>
+                <p>Krishna Science School</p>
+                <h4>87%</h4>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="work" id="work">
+
+    <h2 class="heading">Projects <span>Made</span></h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <div class="tag"><h3>Slotify – Smart Parking</h3></div>
+                <div class="desc">
+                    <p>Real-time parking slot management system that lets users view, book, and track parking availability through a smart web interface.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <div class="tag"><h3>Smart AI Gallery</h3></div>
+                <div class="desc">
+                    <p>AI-powered image gallery that auto-tags, organizes, and recommends photos based on content recognition and user behavior.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="heading">Get in <span>Touch</span></h2>
+
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img src="https://cdn.jsdelivr.net/gh/jigar-sable/Portfolio-Website@master/assets/images/contact.png" alt="contact">
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="message">
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit">
+                        Send <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-grid">
+
+        <!-- Column 1: About -->
+        <div class="footer-col">
+            <div class="footer-logo">
+                <img src="./image/logo.svg" alt="MK Logo">
+                <span>Mayur Kamariya</span>
+            </div>
+            <p class="footer-about">IT Student passionate about AI and Backend Development. Building real-world projects and solving real problems with clean code.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                <li><a href="#education"><i class="fas fa-chevron-right"></i> Education</a></li>
+                <li><a href="#work"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+            <h3 class="footer-heading">Contact Info</h3>
+            <ul class="footer-contact">
+                <li><i class="fas fa-envelope"></i> mrkamariya60@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Junagadh, Gujarat, India</li>
+                <li><i class="fas fa-graduation-cap"></i> Charusat University</li>
+            </ul>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/mayur-kamariya-3b4771321/" target="_blank" class="footer-social-icon linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mayur18-git" target="_blank" class="footer-social-icon github" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:mrkamariya60@gmail.com" class="footer-social-icon email" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 <span>Mayur Kamariya</span>. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
