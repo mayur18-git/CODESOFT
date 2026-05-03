@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusFlow — Do your best work, every day.</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%237C3AED'/><stop offset='100%25' stop-color='%2310B981'/></linearGradient></defs><rect width='36' height='36' rx='8' fill='url(%23g)'/><circle cx='18' cy='18' r='10' stroke='white' stroke-width='2' fill='none'/><line x1='18' y1='18' x2='18' y2='11' stroke='white' stroke-width='2' stroke-linecap='round'/><line x1='18' y1='18' x2='23' y2='21' stroke='%23A78BFA' stroke-width='2' stroke-linecap='round'/><circle cx='18' cy='18' r='1.5' fill='white'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        FocusFlow
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-nav-login">Log in</a>
+        <a href="#" class="btn btn-violet">Start Free</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">✦ Trusted by 50,000+ focused professionals</div>
+        <h1>Stop Context Switching.<br><span>Start Deep Work.</span></h1>
+        <p class="hero-sub">FocusFlow combines smart timers, AI-powered task prioritization, and distraction blocking — so you do your best work, every day.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-mint">Start for Free →</a>
+          <a href="#" class="btn btn-ghost-white">▶ Watch Demo</a>
+        </div>
+        <div class="social-proof">
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="proof-text"><strong>4.9/5</strong> from 2,400+ reviews</p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="app-mockup">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+              <div class="mockup-dot"></div>
+            </div>
+            <div class="mockup-status">
+              <div class="status-dot"></div>
+              Focus Active
+            </div>
+          </div>
+          <div class="timer-ring-wrap">
+            <div class="timer-ring">
+              <svg viewBox="0 0 140 140">
+                <circle class="ring-bg" cx="70" cy="70" r="60"/>
+                <circle class="ring-mint" cx="70" cy="70" r="60"/>
+                <circle class="ring-fill" cx="70" cy="70" r="60"/>
+              </svg>
+              <div class="timer-center">
+                <div class="timer-time" id="hero-timer">24:32</div>
+                <div class="timer-label">DEEP WORK</div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-task-label">Current Task</div>
+          <div class="mockup-task">
+            <div class="task-dot"></div>
+            <div class="task-name">Write Q3 Report</div>
+            <div class="task-chip">High Priority</div>
+          </div>
+          <div class="mockup-task-muted">
+            <div class="task-dot-muted"></div>
+            <div class="task-name-muted">Review PRs</div>
+          </div>
+          <div class="mockup-task-muted">
+            <div class="task-dot-muted"></div>
+            <div class="task-name-muted">Team standup prep</div>
+          </div>
+          <div class="mockup-footer">
+            <div class="mockup-stat">
+              <div class="mockup-stat-val">4</div>
+              <div class="mockup-stat-key">Sessions</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-val">3h 40m</div>
+              <div class="mockup-stat-key">Deep Work</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-val">🔥 12</div>
+              <div class="mockup-stat-key">Day Streak</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="logos">
+  <div class="container">
+    <p class="logos-label">Teams at these companies use FocusFlow</p>
+    <div class="logos-row">
+      <div class="logo-item">Stripe</div>
+      <div class="logo-item">Notion</div>
+      <div class="logo-item">Figma</div>
+      <div class="logo-item">Vercel</div>
+      <div class="logo-item">Linear</div>
+      <div class="logo-item">Shopify</div>
+    </div>
+  </div>
+</section>
+
+<section id="problem" class="section">
+  <div class="container">
+    <div class="problem-grid fade-in">
+      <div class="problem-col">
+        <h2>Your focus is<br>under attack.</h2>
+        <ul class="problem-list">
+          <li class="problem-item">
+            <div class="icon-x">✗</div>
+            <span>Constant Slack pings destroy your deep work flow before you even get started.</span>
+          </li>
+          <li class="problem-item">
+            <div class="icon-x">✗</div>
+            <span>You forget what you were doing after every interruption and waste time re-orienting.</span>
+          </li>
+          <li class="problem-item">
+            <div class="icon-x">✗</div>
+            <span>End the day exhausted but feeling unproductive — without knowing where the time went.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="solution-col">
+        <h2>FocusFlow<br>fixes this.</h2>
+        <div class="solution-item">
+          <div class="icon-check">✓</div>
+          <span>Smart focus sessions block all distractions automatically — notifications, websites, all of it.</span>
+        </div>
+        <div class="solution-item">
+          <div class="icon-check">✓</div>
+          <span>Your task context is always saved and resumed instantly, right where you left off.</span>
+        </div>
+        <div class="solution-item">
+          <div class="icon-check">✓</div>
+          <span>See exactly what you accomplished — every single day — with deep analytics and session logs.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <div class="features-header fade-in">
+      <span class="section-label">Features</span>
+      <h2>Everything you need to enter flow state</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <span class="feature-icon">⏱</span>
+        <h3>Smart Pomodoro Timer</h3>
+        <p>Customizable work/break cycles that adapt to your energy levels throughout the day.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🛡</span>
+        <h3>Distraction Blocker</h3>
+        <p>Block websites, silence notifications, and create an unbreakable focus environment.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">✅</span>
+        <h3>Task Prioritization</h3>
+        <p>AI ranks your tasks by urgency and impact so you always work on what matters most.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">📊</span>
+        <h3>Deep Analytics</h3>
+        <p>Visual reports show your peak focus hours, streaks, and productivity trends over time.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🔗</span>
+        <h3>App Integrations</h3>
+        <p>Syncs with Notion, Todoist, Linear, Jira, Google Calendar, and 40+ other tools.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <span class="feature-icon">🌙</span>
+        <h3>Focus Modes</h3>
+        <p>Switch between Deep Work, Flow State, Meeting Prep, and Wind Down modes instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="container">
+    <div class="how-header fade-in">
+      <span class="section-label">How it works</span>
+      <h2>Get into flow in 3 steps</h2>
+    </div>
+    <div class="steps-row">
+      <div class="step-card fade-in">
+        <div class="step-num">1</div>
+        <div class="step-icon">📋</div>
+        <h3>Add your tasks</h3>
+        <p>Paste in your to-do list or import from any tool — Notion, Linear, Asana, and more.</p>
+      </div>
+      <div class="step-card fade-in">
+        <div class="step-num">2</div>
+        <div class="step-icon">🚀</div>
+        <h3>Start a session</h3>
+        <p>FocusFlow picks the best task and blocks all distractions so you can go deep.</p>
+      </div>
+      <div class="step-card fade-in">
+        <div class="step-num">3</div>
+        <div class="step-icon">📈</div>
+        <h3>Track your flow</h3>
+        <p>See your deep work hours grow day by day with beautiful, actionable reports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="testi-header fade-in">
+      <span class="section-label">Testimonials</span>
+      <h2>Loved by deep workers worldwide</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-in">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">FocusFlow doubled my deep work hours in the first week. The distraction blocker alone is worth every penny.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av1">SK</div>
+          <div>
+            <div class="testi-name">Sarah K.</div>
+            <div class="testi-role">Product Designer at Figma</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">I've tried every productivity app. FocusFlow is the only one that actually changed my daily habits. Incredible product.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av2">MT</div>
+          <div>
+            <div class="testi-name">Marcus T.</div>
+            <div class="testi-role">Senior Engineer at Stripe</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-in">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">My team's output quality shot up after we made FocusFlow our standard tool. The analytics are eye-opening.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av3">PM</div>
+          <div>
+            <div class="testi-name">Priya M.</div>
+            <div class="testi-role">Founder, AI Startup</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="pricing-header fade-in">
+      <span class="section-label">Pricing</span>
+      <h2>Simple, transparent pricing</h2>
+      <div class="pricing-toggle">
+        <span class="toggle-label active" id="monthly-label">Monthly</span>
+        <div class="toggle-track" id="pricing-toggle">
+          <div class="toggle-thumb"></div>
+        </div>
+        <span class="toggle-label" id="yearly-label">Yearly</span>
+        <span class="save-badge">Save 40%</span>
+      </div>
+    </div>
+
+
+    <div class="pricing-grid">
+      <div class="pricing-card fade-in">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">
+          <span class="price-amount">$0</span>
+        </div>
+        <div class="price-period">/ month</div>
+        <div class="plan-desc">Perfect to get started.</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="plan-feature"><span class="feat-check">✓</span> 3 Focus sessions / day</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Basic timer modes</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> 7-day history</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> 2 integrations</li>
+        </ul>
+        <a href="#" class="btn btn-outline-violet" style="width:100%;justify-content:center;">Get Started Free</a>
+      </div>
+
+      <div class="pricing-card popular fade-in">
+        <div class="popular-badge">★ MOST POPULAR</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">
+          <span class="price-amount" id="pro-price">$12</span>
+        </div>
+        <div class="price-period">/ month <span id="pro-billing"></span></div>
+        <div class="plan-desc" id="pro-desc">Billed monthly.</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="plan-feature"><span class="feat-check">✓</span> Unlimited sessions</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> All focus modes</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Full analytics + trends</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Unlimited integrations</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Distraction blocker</li>
+        </ul>
+        <a href="#" class="btn btn-mint" style="width:100%;justify-content:center;">Start Pro Trial →</a>
+      </div>
+
+
+      <div class="pricing-card fade-in">
+        <div class="plan-name">Team</div>
+        <div class="plan-price">
+          <span class="price-amount" id="team-price">$29</span>
+        </div>
+        <div class="price-period">/ month per seat <span id="team-billing"></span></div>
+        <div class="plan-desc" id="team-desc">Billed monthly.</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="plan-feature"><span class="feat-check">✓</span> Everything in Pro</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Team dashboards</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Manager insights</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> Priority support</li>
+          <li class="plan-feature"><span class="feat-check">✓</span> SSO + Admin controls</li>
+        </ul>
+        <a href="#" class="btn btn-ghost-dark" style="width:100%;justify-content:center;">Contact Sales</a>
+      </div>
+    </div>
+    <div class="pricing-footer fade-in">
+      <span>No credit card required</span>
+      <span>Cancel anytime</span>
+      <span>14-day free trial</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container">
+    <div class="faq-header fade-in">
+      <span class="section-label">FAQ</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Is FocusFlow available on mobile?
+          <div class="faq-chevron">▾</div>
+        </button>
+        <div class="faq-answer"><p>Yes — FocusFlow has native iOS and Android apps, plus a powerful Chrome extension for desktop. All your data syncs seamlessly across every device.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Can I import my tasks from other tools?
+          <div class="faq-chevron">▾</div>
+        </button>
+        <div class="faq-answer"><p>Absolutely. FocusFlow integrates directly with Notion, Todoist, Linear, Asana, Jira, and more — with one-click import and two-way sync.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Does the distraction blocker work on all browsers?
+          <div class="faq-chevron">▾</div>
+        </button>
+        <div class="faq-answer"><p>The Chrome extension blocks sites everywhere. Safari and Firefox support is coming in Q2 2025. System-level blocking for macOS is available on the desktop app.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          What happens to my data if I cancel?
+          <div class="faq-chevron">▾</div>
+        </button>
+        <div class="faq-answer"><p>You own your data. Export everything in CSV or JSON format anytime, and we store it for 90 days after cancellation — no pressure, no lock-in.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          Is there a team or enterprise plan?
+          <div class="faq-chevron">▾</div>
+        </button>
+        <div class="faq-answer"><p>Yes — the Team plan includes shared dashboards, manager-level analytics, and SSO support. For larger organizations, reach out for custom Enterprise pricing.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          How is FocusFlow different from a basic Pomodoro timer?
+          <div class="faq-chevron">▾</div>
+        </button>
+        <div class="faq-answer"><p>FocusFlow goes far beyond a timer. AI task ranking, active distraction blocking, deep productivity analytics, and integrations with 40+ tools set it in a completely different category.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <h2>Your most productive year starts today.</h2>
+      <p>Join 50,000+ professionals who have transformed their workday with FocusFlow.</p>
+      <a href="#" class="btn btn-mint" style="font-size:1.05rem;padding:18px 36px;">Start Free — No Credit Card Needed →</a>
+      <div class="store-badges">
+        <a href="#" class="store-badge">
+          <div class="badge-icon">🍎</div>
+          <div class="badge-text">
+            <span class="badge-sub">Download on the</span>
+            <span class="badge-title">App Store</span>
+          </div>
+        </a>
+        <a href="#" class="store-badge">
+          <div class="badge-icon">▶</div>
+          <div class="badge-text">
+            <span class="badge-sub">Get it on</span>
+            <span class="badge-title">Google Play</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <div class="logo-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          FocusFlow
+        </a>
+        <p class="footer-tagline">Do your best work, every day. Built for deep workers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul class="footer-links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Integrations</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Templates</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 FocusFlow Inc. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" title="Twitter">𝕏</a>
+        <a href="#" class="social-icon" title="LinkedIn">in</a>
+        <a href="#" class="social-icon" title="GitHub">⌥</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="mobile-overlay"></div>
+
+<nav id="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+      </div>
+      FocusFlow
+    </a>
+    <button class="mobile-nav-close" id="mobile-nav-close" onclick="document.getElementById('mobile-nav').classList.remove('open');document.getElementById('mobile-overlay').classList.remove('open');document.body.style.overflow='';">✕</button>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="mobile-nav-actions">
+    <a href="#" class="btn btn-ghost-dark" style="width:100%;justify-content:center;">Log in</a>
+    <a href="#" class="btn btn-violet" style="width:100%;justify-content:center;">Start Free</a>
+  </div>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
